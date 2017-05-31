@@ -1,2 +1,8 @@
 eclipse.preferences.version=1
+encoding//clis/choices.py=UTF-8
+encoding//clis/counterpattern.py=UTF-8
 encoding//clis/hello_world_optparser.py=utf-8
+encoding//clis/multiple_option_args.py=UTF-8
+encoding//clis/sysargv.py=UTF-8
+encoding//clis/test_optparse.py=UTF-8
+encoding//clis/verbosetest.py=UTF-8

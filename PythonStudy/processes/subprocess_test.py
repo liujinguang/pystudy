@@ -8,5 +8,5 @@ import subprocess
 
 if __name__ == '__main__':
     aa = subprocess.call(["ls", "-wwwl"])
-    print subprocess.CalledProcessError.returncode
+#     print subprocess.CalledProcessError.returncode
     print "aa=" + str(aa)

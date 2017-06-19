@@ -4,6 +4,19 @@
 Created on 2017年5月29日
 
 @author: bob
+
+Qualified attribute names refer to attributes of specific objects and obey the rules for
+modules and classes. For class and instance objects, the reference rules are augmented
+to include the inheritance search procedure:
+
+Assignment (object.X = value)
+    Creates or alters the attribute name X in the namespace of the object being qualified,
+    and none other. Inheritance-tree climbing happens only on attribute reference,
+    not on attribute assignment.
+Reference (object.X)
+    For class-based objects, searches for the attribute name X in object, then in all
+    accessible classes above it, using the inheritance search procedure. For nonclass
+    objects such as modules, fetches X from object directly.
 '''
 
 class Person(object):

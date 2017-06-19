@@ -2,6 +2,13 @@
 Created on May 27, 2017
 
 @author: bob
+    @decorator
+    def func(args): ...
+is automatically translated to this equivalent by Python, to rebind the function name
+to the result of the decorator callable:
+    def func(args): ...
+    func = decorator(func)
+
 '''
 
 class Person(object):

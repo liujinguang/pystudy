@@ -7,8 +7,8 @@ Created on May 27, 2017
 # This Property class catches attribute accesses with the descriptor protocol and routes
 # requests to functions or methods passed in and saved in descriptor state when the class
 # is created. Attribute fetches, for example, are routed from the Person class, to the
-# Property class¡¯s __get__ method, and back to the Person class¡¯s getName. With descriptors,
-# this ¡°just works.¡±
+# Property class. __get__ method, and back to the Person class's getName. With descriptors,
+# this just works
 
 # Note that this descriptor class equivalent only handles basic property usage, though;
 # to use @ decorator syntax to also specify set and delete operations, our Property class

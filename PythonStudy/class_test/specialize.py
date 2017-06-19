@@ -4,6 +4,12 @@
 Created on Jun 19, 2017
 
 @author: bob
+
+An abstract superclass is a class that calls a method, but does not inherit or define
+it—it expects the method to be filled in by a subclass. This is often used as a way
+to generalize classes when behavior cannot be predicted until a more specific subclass
+is coded. OOP frameworks also use this as a way to dispatch to client-defined,
+customizable operations.
 '''
 
 class Super(object):

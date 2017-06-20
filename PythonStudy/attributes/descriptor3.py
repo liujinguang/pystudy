@@ -2,6 +2,17 @@
 Created on May 27, 2017
 
 @author: bob
+
+In fact, descriptors can use both instance
+state and descriptor state, or any combination thereof:
+? Descriptor state is used to manage data internal to the workings of the descriptor.
+? Instance state records information related to and possibly created by the client
+class.
+Descriptor methods may use either, but descriptor state often makes it unnecessary to
+use special naming conventions to avoid name collisions for descriptor data stored on
+an instance. For example, the following descriptor attaches information to its own
+instance, so it doesn¡¯t clash with that on the client class¡¯s instance:
+
 '''
 
 class DescState(object):

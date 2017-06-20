@@ -2,6 +2,12 @@
 Created on May 27, 2017
 
 @author: bob
+
+Also note that when a descriptor class is not useful outside the client class, it¡¯s perfectly
+reasonable to embed the descriptor¡¯s definition inside its client syntactically.
+
+Also note that when a descriptor class is not useful outside the client class, it?¡¥s perfectly
+reasonable to embed the descriptor?¡¥s definition inside its client syntactically.
 '''
 
 # In fact, descriptors can use both instance state and descriptor state, or any combination thereof:

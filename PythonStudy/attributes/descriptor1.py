@@ -2,6 +2,9 @@
 Created on May 27, 2017
 
 @author: bob
+Unlike with properties, however, omitting a __set__ allows the name to be redefined in an instance,
+thereby hiding the descriptor¡ªto make an attribute read-only, you must define
+__set__ to catch assignments and raise an exception.
 '''
 
 class D(object):
